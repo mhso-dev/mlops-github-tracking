@@ -1,6 +1,5 @@
 name: wine-model-training
 on: [push]
-permissions: write-all
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -18,4 +17,4 @@ jobs:
       - name: Generate Metric
         run: |
           echo "MODEL METRICS"
-					cat metrics.txt
+          cat metrics.txt
