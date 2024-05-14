@@ -21,6 +21,9 @@ jobs:
           python train.py
       - name: Generate Report
         run: |
+          echo "## MODEL METRICS" > report.md
+          cat metrics.txt >> report.md
+          
           echo "## Data viz" >> report.md
           echo "![](feature_importance.png)" >> report.md
           echo "![](residuals.png)" >> report.md
